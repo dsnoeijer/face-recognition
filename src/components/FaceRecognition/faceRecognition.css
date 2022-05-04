@@ -1,0 +1,63 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.posas {
+    position: absolute;
+}
+
+
+.bounding-box {
+    position: absolute;
+    box-shadow: 0 0 0 3px #149df2 inset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.laser {
+    opacity: 0;
+    width: 150%;
+    margin-left: -25%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    border: 1px solid red;
+    animation: scanning 1.5s linear;
+}
+
+.shrink {
+    animation: shrink 1.5s linear;
+}
+
+@keyframes scanning {
+    0% {
+        opacity: 1;
+        top: 0;
+    }
+
+    25% {
+        top: 50%;
+    }
+
+    50% {
+        top: 100%;
+    }
+
+    75% {
+        top: 50%;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}

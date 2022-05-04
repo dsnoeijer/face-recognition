@@ -1,7 +1,7 @@
 const Rank = () => {
     return (
         <div>
-            <div className="white f3">
+            <div className="white f3 pt4">
                 Your current rank is...
             </div>
             <div className="white f1">
